@@ -46,6 +46,16 @@ version = '1.0'
 default-features = false
 version = "1.0.119"
 
+[dependencies.sp-io]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'devhub/latest'
+version = '4.0.0-dev'
+
+[dependencies.log]
+default-features = false
+version = "0.4.14"
+
 [dev-dependencies.sp-core]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
@@ -72,6 +82,7 @@ std = [
     'scale-info/std',
     'frame-support/std',
     'frame-system/std',
-    'frame-benchmarking/std'
+    'frame-benchmarking/std',
+	'sp-io/std'
 ]
 try-runtime = ['frame-support/try-runtime']
